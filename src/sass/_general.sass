@@ -1,0 +1,97 @@
+body 
+    background-color: $b
+    padding-top: 50px
+    font-family: arial
+h1 
+    color: $w
+    text-align: center
+    color: $w
+    font-family: $bold
+    font-size: 50px
+    letter-spacing: 2px
+    margin-bottom: 40px
+.timer 
+    padding: 30px 5px
+    width: 100%
+    min-height: 150px
+    border-radius: 30px
+    border: 2px solid $w
+    margin-bottom: 30px
+    &-form 
+        .timer-header
+            margin-bottom: 10px
+        input 
+            outline: none
+            margin: 0 auto
+            display: block
+            height: 30px
+            border-radius: 15px
+            padding: 0 8px
+            border: none
+    &-form > div 
+        margin-bottom: 20px
+    &-new 
+        border: 2px dashed $w
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        cursor: pointer
+        &:before
+            content: ''
+            width: 2px
+            height: 85px
+            background: $w
+        &:after 
+            content: ''
+            width: 85px
+            height: 2px
+            background: $w
+            position: absolute
+    &-header
+        color: $w
+        text-align: center
+        font-family: $sb
+        font-size: 28px
+        margin-bottom: 20px
+    &-time 
+        color: $w
+        text-align: center
+        font-family: $bold
+        font-size: 30px
+        margin-bottom: 20px
+    &-btn
+        width: 121px
+        height: 40px
+        flex-shrink: 0
+        border-radius: 17px
+        display: flex
+        justify-content: center
+        align-items: center
+        border: none
+        color: $w
+        font-family: $med
+        font-size: 22px
+        cursor: pointer
+        margin: 0 auto
+        outline: none
+.event-name-form
+    input
+        width: 300px
+        border: 2px dashed $w
+        color: $w
+        background-color: $b
+        font-family: $med
+.event-deadline-inputs
+    width: 300px
+    margin: 0 auto
+    display: flex
+    align-items: center
+    justify-content: space-between
+    input 
+        width: 140px
+        height: 25px
+.delete-btn
+    background: $red
+.submit-btn
+    background-color: $green
